@@ -4,8 +4,6 @@
 config_version: '0.40'
 
 schema_list:
-  - schema: stzm
-  - schema: pinyin_xq
   - schema: luna_pinyin
   - schema: luna_pinyin_simp
   - schema: luna_pinyin_fluency
@@ -16,7 +14,7 @@ schema_list:
   - schema: terra_pinyin
 
 switcher:
-  caption: 〔方案选择〕
+  caption: 〔方案選單〕
   hotkeys:
     - Control+grave
     - Control+Shift+grave
@@ -34,7 +32,7 @@ switcher:
   option_list_separator: '／'
 
 menu:
-  page_size: 9
+  page_size: 5
 
 punctuator:
   full_shape:
@@ -50,7 +48,6 @@ key_binder:
       - key_bindings:/paging_with_minus_equal
       - key_bindings:/paging_with_comma_period
       - key_bindings:/numbered_mode_switch
-      #- key_bindings:/windows_compatible_mode_switch
 
 recognizer:
   patterns:
@@ -61,7 +58,7 @@ recognizer:
 ascii_composer:
   good_old_caps_lock: true
   switch_key:
-    Shift_L: commit_code
+    Shift_L: inline_ascii
     Shift_R: commit_text
     Control_L: noop
     Control_R: noop
