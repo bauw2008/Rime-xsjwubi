@@ -1,0 +1,19 @@
+# 作者: 郭斌勇 <guobinyong@qq.com>
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.9.30
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Tue Jul 04 21:27:23 2017"
+  rime_version: 1.1.2
+patch:
+#  switcher: # 切换输入法的配置块
+#    hotkeys: # 快捷键；可以设置多个快捷键，这样每个快捷键都生效; grave 是键盘上的 `
+#      - "Control+grave"
+#      - "Control+Shift+grave"
+#      - F4
+  schema_list:
+    - {schema: wubixinshiji}    # 新世纪五笔
+#    - {schema: luna_pinyin}     # 朙月拼音
+    - {schema: pinyin_simp}     # 袖珍简化字拼音
+    - {schema: wubixinshiji_pinyin}     # 新世纪五笔·拼音
+    - {schema: wubixinshiji_trad}     # 新世纪五笔·简入繁出
